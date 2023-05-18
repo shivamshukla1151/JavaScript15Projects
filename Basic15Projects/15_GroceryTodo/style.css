@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+/* Variables */
+
+:root {
+  /* blue shade */
+  --clr-blue-primary-1: #7babd6;
+  --clr-blue-primary-2: #355d80;
+  --clr-blue-primary-3: #19376d;
+
+  /* green shade */
+  --clr-green-primary-1: #a0d8b3;
+  --clr-green-primary-2: #35754a;
+
+  /* red shade */
+  --clr-red-primary-1: #fea1a1;
+  --clr-red-primary-2: #b04759;
+
+  /* grey shade */
+  --clr-grey-primary-1: #dbdfea;
+  --clr-grey-primary-2: #65647c;
+  --clr-grey-primary-3: #212a3e;
+
+  /* fonts */
+  --font-primary: "Roboto", sans-serif;
+  --font-secondary: "Open Sans", sans-serif;
+}
+
+/* Global */
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--font-secondary);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: 0.25rem;
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: var(--font-primary);
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  margin-bottom: 1.25rem;
+}
+
+/* decalred classes */
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 400px;
+  width: 50%;
+  margin: auto;
+  margin-top: 200px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.form-container {
+  margin-top: 50px;
+  align-items: center;
+  text-align: center;
+}
+.form-items {
+  display: flex;
+  justify-content: center;
+}
+/* id */
+#grocery-item {
+  padding: 0.25rem;
+  padding-left: 1rem;
+  background: var(--clr-grey-primary-1);
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  border-color: transparent;
+  font-size: 1rem;
+  flex: 1 0 auto;
+  color: var(--clr-grey-primary-3);
+}
+
+#grocery-item::placeholder {
+  font-family: var(--font-secondary);
+  color: var(--clr-grey-primary-2);
+}
+.btn {
+  background: var(--clr-blue-primary-1);
+  border-color: transparent;
+  flex: 0 0 5rem;
+  display: grid;
+  align-items: center;
+  padding: 0.25rem;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  cursor: pointer;
+  content: var(--clr-grey-primary-3);
+  transition: all 0.3s linear;
+  font-size: 0.85rem;
+}
+.btn:hover {
+  color: #fff;
+  background: black;
+}
